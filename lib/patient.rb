@@ -11,7 +11,10 @@ class Patient
     @@all
   end
 
-  def patients
-    Patient.all 
+  def appointments
+    Appointment.all.map do |apppointment|
+      appointment.doctor
+    end
   end
+    
 end
